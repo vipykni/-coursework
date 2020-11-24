@@ -1,0 +1,119 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Menus, AboutWin, Unit2;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    But1: TButton;
+    But0: TButton;
+    But10: TButton;
+    CE: TButton;
+    C: TButton;
+    Delet: TButton;
+    Del: TButton;
+    But2: TButton;
+    But3: TButton;
+    But4: TButton;
+    But5: TButton;
+    But6: TButton;
+    But7: TButton;
+    But8: TButton;
+    But9: TButton;
+    Plus: TButton;
+    Umnozh: TButton;
+    Min: TButton;
+    MenuItem5: TMenuItem;
+    TMainMenu1: TMainMenu;
+    MenuItem1: TMenuItem;
+    MenuItem2: TMenuItem;
+    MenuItem3: TMenuItem;
+    MenuItem4: TMenuItem;
+    Ravno: TButton;
+    Edit1: TEdit;
+    procedure CClick(Sender: TObject);
+    procedure CEClick(Sender: TObject);
+    procedure ClickBut(Sender: TObject);
+    procedure DeletClick(Sender: TObject);
+    procedure MenuItem4Click(Sender: TObject);
+    procedure MenuItem5Click(Sender: TObject);
+    procedure ClickZnak(Sender: TObject);
+    procedure RavnoClick(Sender: TObject);
+  private
+
+  public
+
+  end;
+
+var
+  Form1: TForm1;
+  a, b, w : Real;
+  znak : String;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+procedure TForm1.ClickBut(Sender: TObject);
+begin
+ Edit1.Text:=Edit1.Text + (Sender as TButton).Caption;
+end;
+procedure TForm1.ClickZnak(Sender: TObject);
+begin
+ a := StrToFloat(Edit1.Text);
+ Edit1.Clear;
+ znak := (Sender as TButton).Caption;
+end;
+procedure TForm1.RavnoClick(Sender: TObject);
+begin
+ b :=  StrToFloat(Edit1.Text);
+  Edit1.Clear;
+  case znak of
+  '+' : w := a+b;
+  '-' : w := a-b;
+  '*' : w := a*b;
+  '/' : w := a/b;
+  end;
+  Edit1.Text := FloatToStr(w);
+  Edit1.Text:=Edit1.Text + (Sender as TButton).Caption;
+end;
+procedure TForm1.CEClick(Sender: TObject);
+begin
+ Edit1.Clear;
+end;
+procedure TForm1.CClick(Sender: TObject);
+begin
+ Edit1.Clear;
+   a:=0;
+   b:=0;
+   w:=0;
+end;
+procedure TForm1.DeletClick(Sender: TObject);
+var
+  str: String;
+begin
+ str:=Edit1.Text;
+  if str <> '' then
+  Delete(str, Length(str),1);
+  Edit1.Text := str;
+end;
+procedure TForm1.MenuItem4Click(Sender: TObject);
+begin
+ wAboutWin:=TwAboutWin.Create(Application);
+ wAboutWin.Show;
+end;
+procedure TForm1.MenuItem5Click(Sender: TObject);
+begin
+ Form2:=TForm2.Create(Application);
+ Form2.Show;
+end;
+end.
+

@@ -1,0 +1,652 @@
+object Form2: TForm2
+  Left = 578
+  Height = 379
+  Top = 240
+  Width = 313
+  Caption = 'Инженерный калькулятор'
+  ClientHeight = 359
+  ClientWidth = 313
+  Color = clInactiveCaption
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Color = clBlack
+  Font.Height = -12
+  Font.Name = 'Segoe UI Semibold'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Font.Style = [fsBold]
+  Menu = TMainMenu1
+  LCLVersion = '2.0.8.0'
+  object But1: TButton
+    Left = 16
+    Height = 41
+    Top = 264
+    Width = 40
+    Caption = '1'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = But1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+  object But2: TButton
+    Left = 64
+    Height = 41
+    Top = 264
+    Width = 40
+    Caption = '2'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = But2Click
+    ParentFont = False
+    TabOrder = 1
+  end
+  object But3: TButton
+    Left = 112
+    Height = 41
+    Top = 264
+    Width = 40
+    Caption = '3'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = But3Click
+    ParentFont = False
+    TabOrder = 2
+  end
+  object But4: TButton
+    Left = 16
+    Height = 41
+    Top = 216
+    Width = 40
+    Caption = '4'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = But4Click
+    ParentFont = False
+    TabOrder = 3
+  end
+  object But5: TButton
+    Left = 64
+    Height = 41
+    Top = 216
+    Width = 40
+    Caption = '5'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = But5Click
+    ParentFont = False
+    TabOrder = 4
+  end
+  object But6: TButton
+    Left = 112
+    Height = 41
+    Top = 216
+    Width = 40
+    Caption = '6'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = But6Click
+    ParentFont = False
+    TabOrder = 5
+  end
+  object But7: TButton
+    Left = 16
+    Height = 41
+    Top = 168
+    Width = 40
+    Caption = '7'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = But7Click
+    ParentFont = False
+    TabOrder = 6
+  end
+  object But8: TButton
+    Left = 64
+    Height = 41
+    Top = 168
+    Width = 40
+    Caption = '8'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = But8Click
+    ParentFont = False
+    TabOrder = 7
+  end
+  object But9: TButton
+    Left = 112
+    Height = 41
+    Top = 168
+    Width = 40
+    Caption = '9'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = But9Click
+    ParentFont = False
+    TabOrder = 8
+  end
+  object Edit1: TEdit
+    Left = 16
+    Height = 32
+    Top = 16
+    Width = 280
+    Anchors = [akTop, akLeft, akRight]
+    BidiMode = bdRightToLeft
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    ParentFont = False
+    TabOrder = 9
+  end
+  object But0: TButton
+    Left = 16
+    Height = 41
+    Top = 312
+    Width = 88
+    Caption = '0'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = But0Click
+    ParentFont = False
+    TabOrder = 10
+  end
+  object MC: TButton
+    Left = 16
+    Height = 41
+    Top = 64
+    Width = 40
+    Caption = 'MC'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = MCClick
+    ParentFont = False
+    TabOrder = 11
+  end
+  object MM: TButton
+    Left = 160
+    Height = 41
+    Top = 64
+    Width = 40
+    Caption = 'M-'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = MMClick
+    ParentFont = False
+    TabOrder = 12
+  end
+  object MP: TButton
+    Left = 112
+    Height = 41
+    Top = 64
+    Width = 40
+    Caption = 'M+'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = MPClick
+    ParentFont = False
+    TabOrder = 13
+  end
+  object Plus: TButton
+    Left = 160
+    Height = 41
+    Top = 168
+    Width = 40
+    Caption = '+'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = PlusClick
+    ParentFont = False
+    TabOrder = 14
+  end
+  object MR: TButton
+    Left = 64
+    Height = 41
+    Top = 64
+    Width = 40
+    Caption = 'MR'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = MRClick
+    ParentFont = False
+    TabOrder = 15
+  end
+  object MS: TButton
+    Left = 208
+    Height = 41
+    Top = 64
+    Width = 40
+    Caption = 'MS'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = MSClick
+    ParentFont = False
+    TabOrder = 16
+  end
+  object Min: TButton
+    Left = 160
+    Height = 41
+    Top = 216
+    Width = 40
+    Caption = '-'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = MinClick
+    ParentFont = False
+    TabOrder = 17
+  end
+  object Umnozh: TButton
+    Left = 160
+    Height = 41
+    Top = 264
+    Width = 40
+    Caption = '*'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = UmnozhClick
+    ParentFont = False
+    TabOrder = 18
+  end
+  object PlusMinus: TButton
+    Left = 112
+    Height = 41
+    Top = 120
+    Width = 40
+    Caption = '+-'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = PlusMinusClick
+    ParentFont = False
+    TabOrder = 19
+  end
+  object But20: TButton
+    Left = 112
+    Height = 41
+    Top = 312
+    Width = 40
+    Caption = '.'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = But20Click
+    ParentFont = False
+    TabOrder = 20
+  end
+  object Del: TButton
+    Left = 160
+    Height = 41
+    Top = 312
+    Width = 40
+    Caption = '/'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = DelClick
+    ParentFont = False
+    TabOrder = 21
+  end
+  object Pavno: TButton
+    Left = 208
+    Height = 89
+    Top = 264
+    Width = 40
+    Caption = '='
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = PavnoClick
+    ParentFont = False
+    TabOrder = 22
+  end
+  object Stepen: TButton
+    Left = 256
+    Height = 41
+    Top = 264
+    Width = 40
+    Caption = '^2'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = StepenClick
+    ParentFont = False
+    TabOrder = 23
+  end
+  object OneDelX: TButton
+    Left = 160
+    Height = 41
+    Top = 120
+    Width = 40
+    Caption = '1/x'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = OneDelXClick
+    ParentFont = False
+    TabOrder = 24
+  end
+  object Sin1: TButton
+    Left = 256
+    Height = 41
+    Top = 216
+    Width = 40
+    Caption = 'sin'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Sin1Click
+    ParentFont = False
+    TabOrder = 25
+  end
+  object Cos1: TButton
+    Left = 256
+    Height = 41
+    Top = 168
+    Width = 40
+    Caption = 'cos'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Cos1Click
+    ParentFont = False
+    TabOrder = 26
+  end
+  object CE: TButton
+    Left = 256
+    Height = 41
+    Top = 120
+    Width = 40
+    Caption = 'CE'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = CEClick
+    ParentFont = False
+    TabOrder = 27
+  end
+  object C: TButton
+    Left = 256
+    Height = 41
+    Top = 64
+    Width = 40
+    Caption = 'C'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = CClick
+    ParentFont = False
+    TabOrder = 28
+  end
+  object Delet: TButton
+    Left = 16
+    Height = 41
+    Top = 120
+    Width = 88
+    Caption = '←'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = DeletClick
+    ParentFont = False
+    TabOrder = 29
+  end
+  object Log1: TButton
+    Left = 208
+    Height = 40
+    Top = 169
+    Width = 40
+    Caption = 'log10'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -13
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Log1Click
+    ParentFont = False
+    TabOrder = 30
+  end
+  object Ln1: TButton
+    Left = 208
+    Height = 41
+    Top = 216
+    Width = 40
+    Caption = 'ln'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Ln1Click
+    ParentFont = False
+    TabOrder = 31
+  end
+  object Koren: TButton
+    Left = 208
+    Height = 41
+    Top = 120
+    Width = 40
+    Caption = '√‎'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = KorenClick
+    ParentFont = False
+    TabOrder = 32
+  end
+  object Expanent: TButton
+    Left = 256
+    Height = 41
+    Top = 312
+    Width = 40
+    Caption = 'exp'
+    Color = clForm
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = '@Malgun Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = ExpanentClick
+    ParentFont = False
+    TabOrder = 33
+  end
+  object TMainMenu1: TMainMenu
+    left = 65528
+    object MenuItem1: TMenuItem
+      Caption = 'Вид'
+      object MenuItem5: TMenuItem
+        Caption = 'Инженерный калькулятор'
+      end
+      object MenuItem6: TMenuItem
+        Caption = 'Обычный калькулятор'
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Правка'
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Справка'
+      object MenuItem4: TMenuItem
+        Caption = 'О программе'
+      end
+    end
+  end
+end
